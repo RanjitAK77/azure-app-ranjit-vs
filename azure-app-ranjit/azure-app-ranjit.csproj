@@ -1,10 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>azure_app_ranjit</RootNamespace>
+    <ApplicationInsightsResourceId>/subscriptions/d8644baf-66d4-4c79-8604-be238d883d2f/resourceGroups/az-group-rg/providers/microsoft.insights/components/azure-app-ark-vs</ApplicationInsightsResourceId>
+    <UserSecretsId>6ed98296-eb9e-44dd-a7ec-d4aa45e2cff2</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.13.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+  </ItemGroup>
 
 </Project>
